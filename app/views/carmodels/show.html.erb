@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type1:</strong>
+  <%= @carmodel.type1 %>
+</p>
+
+<p>
+  <strong>Fuel1:</strong>
+  <%= @carmodel.fuel1 %>
+</p>
+
+<p>
+  <strong>Range1:</strong>
+  <%= @carmodel.range1 %>
+</p>
+
+<p>
+  <strong>Speed1:</strong>
+  <%= @carmodel.speed1 %>
+</p>
+
+<p>
+  <strong>Pollution1:</strong>
+  <%= @carmodel.pollution1 %>
+</p>
+
+<%= link_to 'Edit', edit_carmodel_path(@carmodel) %> |
+<%= link_to 'Back', carmodels_path %>
