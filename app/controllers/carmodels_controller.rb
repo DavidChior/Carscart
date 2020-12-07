@@ -10,6 +10,8 @@ class CarmodelsController < ApplicationController
   # GET /carmodels/1
   # GET /carmodels/1.json
   def show
+      @carmodel = Carmodel.find(params[:id])
+    @cart_action = @carmodel.cart_action current_customer.try :id
   end
 
   # GET /carmodels/new
